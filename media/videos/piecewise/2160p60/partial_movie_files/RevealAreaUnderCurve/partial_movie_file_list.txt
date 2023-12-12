@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/piecewise/2160p60/partial_movie_files/RevealAreaUnderCurve/1457378895_1519047580_1201858778.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/piecewise/2160p60/partial_movie_files/RevealAreaUnderCurve/1993220219_3890345977_2282240634.mp4'

@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/piecewise/2160p60/partial_movie_files/PiecewiseFunction/1457378895_485055775_223132457.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/piecewise/2160p60/partial_movie_files/PiecewiseFunction/1993220219_3056249573_2507181020.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/piecewise/2160p60/partial_movie_files/PiecewiseFunction/1993220219_3463138164_745302283.mp4'

@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1457378895_634017564_1773949317.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_456308294_648543794.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_1978027758_2700023400.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_1526158704_698726169.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_2030466_1339093697.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_2062348168_1140383877.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_2264455647_2637226191.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_4053990506_194914168.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_3939229695_1632943859.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_3221327731_2690296359.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_255102487_1166718057.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/biProduct/2160p60/partial_movie_files/BiProduct/1993220219_255102487_4250257085.mp4'
