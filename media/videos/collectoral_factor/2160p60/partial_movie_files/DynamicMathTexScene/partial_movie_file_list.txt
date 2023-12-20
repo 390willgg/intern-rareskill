@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/DynamicMathTexScene/1457378895_2092018356_3641009919.mp4'

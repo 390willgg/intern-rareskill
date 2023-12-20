@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/RectangleWidthChange/1457378895_307222251_223132457.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/RectangleWidthChange/1993220219_390846376_982182899.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/RectangleWidthChange/1993220219_3890345977_3169348221.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/RectangleWidthChange/1993220219_3595091225_1909589313.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/RectangleWidthChange/1993220219_3890345977_1993299730.mp4'

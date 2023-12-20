@@ -123,6 +123,7 @@ class PiecewiseFunction2(Scene):
         
         # Highlighting the slope1 part of the function
         self.play(piecewise_function[0][60:67].animate.set_color(YELLOW),piecewise_function[0][9:49].animate.set_opacity(0.5),duration=2 )
+        
         # Creating a brace to represent the slope1 on the graph and labeling it
         b2 = Brace(line_branch, direction=line_branch.copy().rotate(PI / 2).get_unit_vector(), stroke_width=-100, color=YELLOW, buff=0.2)
         b2_label = MathTex(r'R_{slope1}', font_size=30).next_to(b2, LEFT*0.5).set_color(YELLOW)
