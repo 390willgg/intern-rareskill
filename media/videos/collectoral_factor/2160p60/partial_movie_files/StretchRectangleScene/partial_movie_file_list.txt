@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/StretchRectangleScene/1457378895_2388371116_180299882.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/StretchRectangleScene/1993220219_1141282389_238210762.mp4'

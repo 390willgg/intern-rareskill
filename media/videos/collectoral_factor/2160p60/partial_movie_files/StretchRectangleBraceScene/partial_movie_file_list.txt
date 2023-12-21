@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/StretchRectangleBraceScene/1457378895_2388371116_180299882.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/StretchRectangleBraceScene/1993220219_169901431_1749110387.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/StretchRectangleBraceScene/1993220219_1141282389_1565606550.mp4'
