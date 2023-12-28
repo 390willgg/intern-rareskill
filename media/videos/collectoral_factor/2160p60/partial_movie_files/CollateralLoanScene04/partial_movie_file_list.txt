@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/CollateralLoanScene04/1457378895_3270691211_2386444858.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/CollateralLoanScene04/1993220219_747053650_3034348753.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/CollateralLoanScene04/1993220219_3148401825_387937454.mp4'
+file 'file:C:/Users/william gunawan/Documents/Magang/New folder/media/videos/collectoral_factor/2160p60/partial_movie_files/CollateralLoanScene04/1993220219_4063178904_3916716550.mp4'
