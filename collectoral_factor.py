@@ -156,69 +156,55 @@ class CollateralLoanScene02(Scene):
 
         # Create the bars
         new_width100 = 8
-        new_width70 = 8*0.5
+        new_width50 = 8 * 0.5
         new_width90 = 8 * 0.9
         
         collateral_bar = RoundedRectangle(width=new_width100, height=1, color=WHITE, corner_radius=0.2).next_to(collateral_label, RIGHT)
-        loan_bar = RoundedRectangle(width=new_width70, height=1, color=WHITE, corner_radius=0.2).next_to(loan_label, RIGHT)
+        loan_bar = RoundedRectangle(width=new_width50, height=1, color=WHITE, corner_radius=0.2).next_to(loan_label, RIGHT)
         loan_bar.align_to(collateral_bar, LEFT)
         
-        # Create the percentage text
         factor = Text("50%")
         percentage_label = Text("Collateral_Factor =", color=WHITE)
         tempFactor = VGroup(percentage_label, factor).arrange(direction=RIGHT, buff=0.3).next_to(LEFT*8 + DOWN*3.1).scale(0.75)
         
-        # Create the brand text
-        brand_label = ImageMobject("media\images/collectoral_factor/rareskillLogo.png").next_to(RIGHT*3+DOWN*3.1)
+        brand_label = ImageMobject("media/images/collectoral_factor/rareskillLogo.png").next_to(RIGHT*3+DOWN*3.1)
 
-        # Group everything together
         self.add(collateral_label, loan_label, collateral_bar, loan_bar, tempFactor, brand_label)
-            
-        def animate_bar_and_percentage(self, bar, new_width, start_percentage, end_percentage, color):
-            def update_percentage(mob, alpha):
-                percentage = int(start_percentage + (end_percentage - start_percentage) * alpha)
-                mob.become(Text(f"{percentage}%", color=color).scale(0.75).next_to(percentage_label, RIGHT))
-            shift_amount = (bar.width - new_width) / 2 
-            tempFactor.set_color(color=color)
-            self.play(UpdateFromAlphaFunc(tempFactor[1], update_percentage), bar.animate.stretch_to_fit_width(new_width).shift(LEFT * shift_amount), run_time=2, rate_func=linear)
         
-        # Animate to 70%
         line = Line(RIGHT*9, color=WHITE)
         left_cap = Line(UP*0.1, DOWN*0.1, color=WHITE).move_to(line.get_start())
         right_cap = Line(UP*0.1, DOWN*0.1, color=WHITE).move_to(line.get_end())
         line_with_caps = VGroup(left_cap, line, right_cap)
 
-        # Create the text
         value_text = Text("Value", color=WHITE, font_size=22)
         lineTempDown = VGroup(line_with_caps, value_text).arrange(direction=DOWN, buff=0.2).next_to(loan_bar, DOWN)
         lineTempDown.align_to(loan_bar, LEFT)
 
-        # Add everything to the scene
         self.add(lineTempDown)
         
-        brace_70 = BraceBetweenPoints(
-            loan_bar.get_right(), 
-            loan_bar.get_right() + RIGHT * (new_width100 - new_width70), 
-            direction=DOWN, 
-            color=GREEN
-        ).shift(DOWN * 1.5)
-        brace_text70 = brace_70.get_tex(r"Higher Margin \\of Safety").scale(0.70)
+        brace_50 = BraceBetweenPoints(loan_bar.get_right(), loan_bar.get_right() + RIGHT * (new_width100 - new_width50), direction=DOWN, color=GREEN).shift(DOWN * 1.5)
+        brace_text70 = brace_50.get_tex(r"Higher Margin \\of Safety").scale(0.70)
+        self.play(GrowFromCenter(brace_50), Write(brace_text70))
+        self.play(FadeOut(brace_50, brace_text70))
         
-        self.play(GrowFromCenter(brace_70), Write(brace_text70))
-        self.play(FadeOut(brace_70, brace_text70))
+        def update_percentage(mob, alpha):
+            percentage = int(50 + (90 - 50) * alpha)
+            
+            if percentage == 90:
+                tempFactor.set_color(RED)
+                mob.become(Text(f"{percentage}%", color=RED).scale(0.75).next_to(percentage_label, RIGHT))
+            else:  
+                tempFactor.set_color(WHITE)
+                mob.become(Text(f"{percentage}%", color=WHITE).scale(0.75).next_to(percentage_label, RIGHT))
+                
+        shift_amount = (loan_bar.width - new_width90) / 2 
+        self.play(UpdateFromAlphaFunc(tempFactor[1], update_percentage), loan_bar.animate.stretch_to_fit_width(new_width90).shift(LEFT * shift_amount), run_time=2, rate_func=linear)
         
-        # Animate to 90%
-        animate_bar_and_percentage(self, loan_bar, new_width90, 50, 90, RED)
-        brace_90 = BraceBetweenPoints(
-            loan_bar.get_right(), 
-            loan_bar.get_right() + RIGHT * (new_width100 - new_width90), 
-            direction=DOWN, 
-            color=RED
-        ).shift(DOWN * 1.5)
+        brace_90 = BraceBetweenPoints(loan_bar.get_right(), loan_bar.get_right() + RIGHT * (new_width100 - new_width90), direction=DOWN, color=RED).shift(DOWN * 1.5)
         brace_text90 = brace_90.get_tex(r"Lower Margin \\of Safety").scale(0.70)
+        
         self.play(GrowFromCenter(brace_90), Write(brace_text90))
         self.play(FadeOut(brace_90, brace_text90))
-        
 
 class CollateralLoanScene03(Scene):
     def construct(self):
@@ -229,16 +215,15 @@ class CollateralLoanScene03(Scene):
 
         # Create the bars
         new_width100 = 8
-        new_width70 = 8*0.7
         new_width80 = 8 * 0.8
         new_width90 = 8 * 0.9
         
         collateral_bar = RoundedRectangle(width=new_width100, height=1, color=WHITE, corner_radius=0.2).next_to(collateral_label, RIGHT)
-        loan_bar = RoundedRectangle(width=new_width70, height=1, color=WHITE, corner_radius=0.2).next_to(loan_label, RIGHT)
+        loan_bar = RoundedRectangle(width=new_width80, height=1, color=WHITE, corner_radius=0.2).next_to(loan_label, RIGHT)
         loan_bar.align_to(collateral_bar, LEFT)
         
         # Create the percentage text
-        factor = Text("70%")
+        factor = Text("80%")
         percentage_label = Text("LTV =", color=WHITE)
         Liquidation_factor = Text("Liquidation factor = 90%", color=WHITE).next_to(LEFT*8 + DOWN*3.1).scale(0.75)
         tempFactor = VGroup(percentage_label, factor).arrange(direction=RIGHT, buff=0.3).next_to(LEFT*8 + DOWN*2.1).scale(0.75)
@@ -263,40 +248,33 @@ class CollateralLoanScene03(Scene):
         # Create the text
         line_with_caps.align_to(loan_bar, LEFT)
         
-        def create_percent_group(bar, proportion, percentage):
+        def create_percent_group(bar, percentage):
             percent_pos = bar.get_right()
             percent_line = Line(UP * 0.1, DOWN * 0.1, color=WHITE).next_to(percent_pos, DOWN*4.1)
             percent_label = Text(f"{percentage}", color=WHITE, font_size=18).next_to(percent_line, DOWN)
             return VGroup(percent_line, percent_label)
         
-        percentage_value = ValueTracker(700)
+        percentage_value = ValueTracker(800)
         
         percent_group = always_redraw(lambda: create_percent_group(
-            loan_bar, 0.9, int(percentage_value.get_value())))
+            loan_bar, int(percentage_value.get_value())))
 
         self.add(line_with_caps, percent_group, percentage_value)
-        
-        def update_percentage70(mob, alpha):
-            percentage = int(70 + (80 - 70) * alpha)
-            mob.become(Text(f"{percentage}%", color=WHITE).scale(0.75).next_to(percentage_label, RIGHT))
-        
-        shift_amount = (loan_bar.width - new_width80) / 2     
-        tempFactor.set_color(color=WHITE)
-        self.play(UpdateFromAlphaFunc(tempFactor[1], update_percentage70), loan_bar.animate.stretch_to_fit_width(new_width80).shift(LEFT * shift_amount), percentage_value.animate.set_value(800), run_time=2, rate_func=linear)
         
         def update_percentage90(mob, alpha):
             percentage = int(80 + (91 - 80) * alpha)
             if percentage < 90:
                 tempFactor.set_color(color=WHITE)
                 mob.become(Text(f"{percentage}%", color=WHITE).scale(0.75).next_to(percentage_label, RIGHT))
-            elif percentage >= 90:
+            elif percentage == 90:
                 tempFactor.set_color(RED)
-                # Liquidation_factor.set_color(color=RED)
                 Liquidation_factor.set_color(color=RED, family=True)
                 mob.become(Text(f"{percentage}%", color=RED).scale(0.75).next_to(percentage_label, RIGHT))
                 
         shift_amount90 = (loan_bar.width - new_width90) / 2     
-        self.play(UpdateFromAlphaFunc(tempFactor[1], update_percentage90), loan_bar.animate.stretch_to_fit_width(new_width90).shift(LEFT * shift_amount90),  percentage_value.animate.set_value(901), run_time=2, rate_func=linear)
+        print("makanan", shift_amount90)
+        self.play(UpdateFromAlphaFunc(tempFactor[1], update_percentage90), loan_bar.animate.stretch_to_fit_width(new_width90).shift(LEFT * shift_amount90),  percentage_value.animate.set_value(900), run_time=2, rate_func=linear)
+        self.wait(2)
         
 class CollateralLoanScene04(Scene):
     def construct(self):
